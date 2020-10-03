@@ -27,6 +27,7 @@ $(".imgBarNextBtn").click(function(){
   changeID++;
   $("#hide").attr("src","Image/test" + changeID + ".png"); 
   alert($(this).attr("name"));
+  
   return false;
 });
 

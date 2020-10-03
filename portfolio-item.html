@@ -15,62 +15,37 @@
 
   <!-- Custom styles for this template -->
   <link href="css/modern-business.css" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body style = "background-color:  hsl(0, 0%, 98%)">
 
   <!-- Navigation -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+      <a class="navbar-brand" href="index.html">Dyron Zhou</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="services.html">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="about.html">關於</a>
           </li>
           <li class="nav-item active dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Portfolio
+              作品集
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-              <a class="dropdown-item" href="portfolio-1-col.html">1 Column Portfolio</a>
-              <a class="dropdown-item" href="portfolio-2-col.html">2 Column Portfolio</a>
-              <a class="dropdown-item" href="portfolio-3-col.html">3 Column Portfolio</a>
+              <a class="dropdown-item active" href="portfolio-1-col.html">專案</a>
+              <a class="dropdown-item" href="portfolio-2-col.html">練習</a>
+              <a class="dropdown-item" href="portfolio-3-col.html">Game Jam</a>
               <a class="dropdown-item" href="portfolio-4-col.html">4 Column Portfolio</a>
-              <a class="dropdown-item active" href="portfolio-item.html">Single Portfolio Item</a>
+              <a class="dropdown-item" href="portfolio-item.html">作品單頁</a>
             </div>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Blog
-            </a>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-              <a class="dropdown-item" href="blog-home-1.html">Blog Home 1</a>
-              <a class="dropdown-item" href="blog-home-2.html">Blog Home 2</a>
-              <a class="dropdown-item" href="blog-post.html">Blog Post</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Other Pages
-            </a>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPages">
-              <a class="dropdown-item" href="full-width.html">Full Width Page</a>
-              <a class="dropdown-item" href="sidebar.html">Sidebar Page</a>
-              <a class="dropdown-item" href="faq.html">FAQ</a>
-              <a class="dropdown-item" href="404.html">404</a>
-              <a class="dropdown-item" href="pricing.html">Pricing Table</a>
-            </div>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">聯絡我</a>
           </li>
         </ul>
       </div>
@@ -92,72 +67,77 @@
     </ol>
 
 
-    <div class="row" style="margin: auto; display: flex; flex-direction: row; align-items: center; justify-content: center; flex-wrap: nowrap;">
-      <a href="#" class="imgBarPreBtn" style="border-right-style: solid;border-color: #233d5a; display: flex; flex-direction: row; align-items: center; justify-content: center;">
-        <span class="carousel-control-next-icon-dark"></span>
-      </a>
-      <div class="col-md-10 imgBarShowVideo" style="display: block;position: relative;height: 0;overflow: hidden;padding: 0;padding-bottom: 50%; margin-left: 3%; margin-right: 3%;">
+
+    <div class="row imgBarParent" style="margin: auto; width: 100%; display: flex; flex-direction: row; align-items: center; justify-content: space-between;">
+      <div class = "imgBarPreBtn" style="align-self:flex-start; border-left-style: solid;border-color: #233d5a;">
+      </div>
+      <div class=" imgBarShowVideo" style="display: block;position: relative;height: 0;overflow: hidden;padding: 0;padding-bottom: 40%; margin-left: 3%; margin-right: 3%; ">
         <iframe src="https://drive.google.com/file/d/1D-n0OOxUrLTckGFXgZkYpiHmp3gLtpcE/preview" allowfullscreen="true" style=" position: absolute;height: 100%; width: 100%; "></iframe>
         <!-- <img class="img-fluid" id="hide" src="Image/test0.jpg" alt=""> -->
       </div>
-      <div class="col-md-10 imgBarShow">
-        <img class="img-fluid imgBarShowImg" style="width: 100%;" src="Image/test0.jpg" alt="">
+      <div class=" imgBarShow" style="display: block; ">
+        <img class="img-fluid imgBarShowImg" style="width: 100%;" src="Image/XREye0.png" alt="">
       </div>
-      <a href="#" class="imgBarNextBtn" style=" border-left-style: solid;border-color: #233d5a; display: flex; flex-direction: row; align-items: center; justify-content: center;">
-        <span class="carousel-control-prev-icon-dark"></span>
-      </a>
+      <div class="imgBarDiscribe" style="display: block; height:100%; color:  #233d5a;">
+        <p style = "font-size:large; font-family: 'Noto Sans TC', sans-serif;">大四暑假參加科技部的計劃進到資策會實習半年並接手一項來自台灣防盲基金會的案子。
+          APP內容分為兩部分，首先是透過相機擷取現實影像再利用後處理來模擬各種眼睛疾病的狀況，以VR呈現讓使用者能身歷其境的體驗各種眼疾；另外則是小遊戲部分，可以讓使用者學習正確用眼知識，
+          也有找物品遊戲讓使用者體驗正常視力與近視的差別，最後則是在3D場景中模擬患有眼疾人士的一天來實際體驗他們的不便。
+          </p>
+      </div>
+      <div class = "imgBarNextBtn" style="align-self:flex-end; border-right-style: solid;border-color: #233d5a; ">
+      </div>
     </div>
 
     <!-- Related Projects Row -->
 
-    <div  style="width: 90%; margin: auto; display: flex; flex-direction: row; align-items: center; justify-content: center; margin-top: 3%;">
+    <div  style="width: 100%; margin: auto; background-color: #233d5a; border-radius: 0.2em; display: flex; flex-direction: row; align-items: center; justify-content: center; margin-top: 3%; margin-bottom:5%;">
 
-      <div style=" width: 70%; display: flex; flex-direction: row; justify-content: space-evenly; flex-wrap: wrap; ">
+      <div style=" width: 100%; display: flex; flex-direction: row; align-items: center; justify-content: space-evenly; flex-wrap: unwrap; ">
 
-        <div class=" mb-2 imgBarElementLock" style=" position: absolute; border-style: dashed; border-width: 4px; border-color: rgb(14, 155, 255); z-index: 10;" >
+        <div class=" imgBarElementLock" style=" position: absolute; border-style: dashed; border-width: 4px; border-color: rgb(14, 155, 255); z-index: 10;" >
           
         </div>
-        <div class=" mb-2 imgBarVideoElement" name = "https://drive.google.com/file/d/1D-n0OOxUrLTckGFXgZkYpiHmp3gLtpcE/preview" style=" margin-left: 1%;margin-right: 1%; flex-basis: 20%" >
+        <div class=" imgBarVideoElement" name = "https://drive.google.com/file/d/1D-n0OOxUrLTckGFXgZkYpiHmp3gLtpcE/preview" style="margin-top: 1%; margin-bottom: 1%; margin-left: 1%;margin-right: 1%; flex-basis: 13%" >
           <a href="#">
             <img class="img-fluid" src="Image/XREyeVideo.png" alt="">
           </a>
         </div>
-        <div class=" mb-2 imgBarImgElement" style=" margin-left: 1%;margin-right: 1%; flex-basis: 20%" >
+        <div class="  imgBarImgElement" style="margin-top: 1%; margin-bottom: 1%; margin-left: 1%;margin-right: 1%; flex-basis: 13%" >
           <a href="#">
             <img class="img-fluid" src="Image/XREye0.png" alt="">
           </a>
         </div>
-        <div class=" mb-2 imgBarImgElement" style=" margin-left: 1%;margin-right: 1%; flex-basis: 20%" >
+        <div class="  imgBarImgElement" style="margin-top: 1%; margin-bottom: 1%; margin-left: 1%;margin-right: 1%; flex-basis: 13%" >
           <a href="#">
             <img class="img-fluid" src="Image/XREye1.png" alt="">
           </a>
         </div>
-        <div class=" mb-2 imgBarImgElement" style=" margin-left: 1%;margin-right: 1%; flex-basis: 20%" >
+        <div class="imgBarImgElement" style="margin-top: 1%; margin-bottom: 1%; margin-left: 1%;margin-right: 1%; flex-basis: 13%" >
           <a href="#">
             <img class="img-fluid" src="Image/XREye2.png" alt="">
           </a>
         </div>
-        <div class=" mb-2 imgBarImgElement" style=" margin-left: 1%;margin-right: 1%; flex-basis: 20%" >
+        <div class=" imgBarImgElement" style="margin-top: 1%; margin-bottom: 1%; margin-left: 1%;margin-right: 1%; flex-basis: 13%" >
           <a href="#">
             <img class="img-fluid" src="Image/XREye3.png" alt="">
           </a>
         </div>
-        <div class=" mb-2 imgBarImgElement" style=" margin-left: 1%;margin-right: 1%; flex-basis: 20%" >
+        <div class="  imgBarImgElement" style="margin-top: 1%; margin-bottom: 1%; margin-left: 1%;margin-right: 1%; flex-basis: 13%" >
           <a href="#">
             <img class="img-fluid" src="Image/XREye4.png" alt="">
           </a>
         </div>
-        <div class=" mb-2 imgBarImgElement" style=" margin-left: 1%;margin-right: 1%; flex-basis: 20%" >
+        <div class="  imgBarImgElement" style="margin-top: 1%; margin-bottom: 1%; margin-left: 1%;margin-right: 1%; flex-basis: 13%" >
           <a href="#">
             <img class="img-fluid" src="Image/XREye5.png" alt="">
           </a>
         </div>
-        <div class=" mb-2 imgBarImgElement" style=" margin-left: 1%;margin-right: 1%; flex-basis: 20%" >
+        <div class="  imgBarImgElement" style="margin-top: 1%; margin-bottom: 1%; margin-left: 1%;margin-right: 1%; flex-basis: 13%" >
           <a href="#">
             <img class="img-fluid" src="Image/XREye6.png" alt="">
           </a>
         </div>
-        <div class=" mb-2 imgBarImgElement" style=" margin-left: 1%;margin-right: 1%; flex-basis: 20%" >
+        <div class="  imgBarImgElement" style="margin-top: 1%; margin-bottom: 1%; margin-left: 1%;margin-right: 1%; flex-basis: 13% " >
           <a href="#">
             <img class="img-fluid" src="Image/XREye7.gif" alt="">
           </a>
@@ -171,17 +151,38 @@
     <!-- /.row -->
 
     <!-- Portfolio Item Row -->
-    <div class="mb-4" style="margin-left: 5%; margin-right: 5%;">
+    <div class="mb-4" >
+      <div class="" style="color:  #233d5a; font-family:'Noto Sans TC', sans-serif;">
+        <h2 class="my-3"><b>學習重點</b></h2>
+        <ul style = "font-size:large; ">
+          <li style="margin-top:1.5%;"><h5><b>Image Effect</b><h5></li>
+          <ul>
+            <li>為了達到一些眼疾效果，需要將相機所得到的畫面做圖片效果的後處理，像是近視遠視的模糊、黃斑部病變的扭曲等等</li>
+            <li>在近視遠視中有特別為了讓物品會隨著遠近模糊程度有所不同，學習關於高斯模糊的原理</li>
+          </ul>
 
-      <div class="">
-        <h3 class="my-3">Project Description</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
-        <h3 class="my-3">Project Details</h3>
-        <ul>
-          <li>Lorem Ipsum</li>
-          <li>Dolor Sit Amet</li>
-          <li>Consectetur</li>
-          <li>Adipiscing Elit</li>
+          <li style="margin-top:1.5%;"><h5><b >Cardboard VR</b><h5></li>
+            <ul>
+              <li>使用 google 提供的插件能方便使遊戲變成 VR 模式,使用他們提供的攝影機腳本和注視事件腳本</li>
+              <li>使用 VR 須注意物品不能離攝影機太近，不然會有無法對焦的問題,另外 UI 需換成在世界座標中，不能使用 overlap 的方式</li>
+              <li>為了使使用者有良好體驗,有特別做 UI 介面跟隨使用者視線,抓取攝影機旋轉角度來移動旋轉 UI 物件</li>
+            </ul>
+
+          <li style="margin-top:1.5%;"><h5><b >Vuforia</b><h5></li>
+          <ul>
+            <li>vuforia 是一個 AR 插件，使用上滿簡單的，不過為了達到一些功能,仍需要上官網查看 API，像是開關相機或調整相機對焦</li>
+          </ul>
+          
+          <li style="margin-top:1.5%;"><h5><b >360 圖片</b><h5></li>
+            <ul>
+              <li>為了達到業主要求有使用 360 度相機拍攝真實畫面放入 App 中</li>
+              <li>360 圖片裡的物品選取邊框是偷吃步，讓美術個別生出邊框直接放入場景中對應位置</li>
+            </ul>
+
+            <li style="margin-top:1.5%;"><h5><b >其他</b><h5></li>
+              <ul>
+                <li>第一次直接與業界接觸，企劃、美術和程式都有詳細的分工,自己也從中學習到很多，如規格書撰寫和如何向美術開需求，與設計彈性的code能不斷修改以便達到業主的要求</li>
+              </ul>
         </ul>
       </div>
 
@@ -193,9 +194,9 @@
 
   
   <!-- Footer -->
-  <footer class="py-5 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
+  <footer class="py-3 bg-dark" style = "padding-bottom:0px;">
+    <div class="container" style = "margin-right:0px; display:flex; justify-content:flex-end; align-items:flex-end;">
+      <p class="m-0 text-center text-white" style = "margin-right:0px;">Copyright &copy; Your Website 2020</p>
     </div>
     <!-- /.container -->
   </footer>
