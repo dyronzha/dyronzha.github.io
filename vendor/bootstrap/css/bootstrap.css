@@ -612,6 +612,13 @@ pre code {
     max-width:100%;
     order:1;
   }
+  .selfDes{
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start; 
+    align-content: flex-start; 
+    justify-content: space-around;
+    }
 }
 
 @media (min-width: 576px) {
@@ -642,6 +649,14 @@ pre code {
     flex-basis: 100%;
     max-width:100%;
     order:1;
+  }
+  .selfDes{
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start; 
+    align-content: flex-start; 
+    justify-content: space-around;
+    font-size: small;
   }
 }
 
@@ -674,6 +689,13 @@ pre code {
     flex-basis: 100%;
     order:1;
   }
+  .selfDes{
+    display: flex; 
+    flex-direction: row; 
+    align-items: flex-start; 
+    align-content: flex-start; 
+    justify-content: space-around;
+  }
 }
 
 @media (min-width: 992px) {
@@ -702,6 +724,13 @@ pre code {
     flex-basis: 30%;
     order:4;
   }
+  .selfDes{
+    display: flex; 
+    flex-direction: row; 
+    align-items: flex-start; 
+    align-content: flex-start; 
+    justify-content: space-around;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -729,6 +758,13 @@ pre code {
   .imgBarDiscribe{
     flex-basis: 30%;
     order:4;
+  }
+  .selfDes{
+    display: flex; 
+    flex-direction: row; 
+    align-items: flex-start; 
+    align-content: flex-start; 
+    justify-content: space-around;
   }
 }
 
@@ -4913,6 +4949,7 @@ input[type="button"].btn-block {
   flex: 1 1 auto;
   min-height: 1px;
   padding: 1.25rem;
+  background-color: #233d5a;
 }
 
 .card-title {
@@ -4939,8 +4976,8 @@ input[type="button"].btn-block {
 .card-header {
   padding: 0.75rem 1.25rem;
   margin-bottom: 0;
-  background-color: rgba(0, 0, 0, 0.03);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  background-color: #233d5a;
+  border-bottom: 1px solid #233d5a;
 }
 
 .card-header:first-child {
@@ -5004,6 +5041,40 @@ input[type="button"].btn-block {
 
 .card-deck .card {
   margin-bottom: 15px;
+}
+
+/* 1. 以 ul 作為定位點*/
+.time{
+  position: relative;
+  /* 讓偽元素以 ul 作為定位點，因此 ul 需要設定為「相對位置」 */
+}
+/* 2. li margin-bottom */
+.edu{
+  margin-bottom: 32px;
+}
+/* 3. 利用偽元素做圓點*/
+.edu::before{ /*前方偽元素*/
+  content: "";
+  /*產生一個空的元素，偽元素使用不能少的步驟*/
+  position: absolute;
+  /* 偽元素需設定成「絕對位置」 */
+  width: 16px; /*圓點寬*/
+  height: 16px;/*圓點高*/
+  background-color: #96A9C4; /*圓點 color*/
+  border-radius: 50%; /*圓*/
+  left: -32px; /*圓點本來覆蓋在 li 上*/
+}
+/* 4. 利用偽元素做線*/
+.timeline::after{ /*後方偽元素*/
+  position: absolute;
+    top:0;
+    height: 100%;
+    left:50%;
+    border:3px solid #56332e;
+    content:'';
+    width: 0px;
+    background-color: #56332e;
+    margin-left: -3px;
 }
 
 @media (min-width: 576px) {
@@ -6970,7 +7041,7 @@ button.bg-light:focus {
 a.bg-dark:hover, a.bg-dark:focus,
 button.bg-dark:hover,
 button.bg-dark:focus {
-  background-color: #1d2124 !important;
+  background-color: #233d5a !important;
 }
 
 .bg-white {

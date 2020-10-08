@@ -39,7 +39,9 @@ $(".imgBarElement").click(function(){
 $(".imgBarVideoElement").click(function(){
   $(".imgBarShow").hide();
   $(".imgBarShowVideo").show();
-  $("imgBarShowVideo").find("iframe").attr("src", $(this).attr("name"));
+  if( $(".imgBarShowVideo").find("iframe").attr("src") != $(this).attr("name")){
+    $(".imgBarShowVideo").find("iframe").attr("src", $(this).attr("name"));
+  } 
   lockElement = $(this);
   SetImgLock($(this).innerWidth(), $(this).innerHeight(), $(this).offset().top, $(this).offset().left );
   return false;
