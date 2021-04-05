@@ -619,6 +619,12 @@ pre code {
     align-content: flex-start; 
     justify-content: space-around;
     }
+    .selfDesChild{
+      flex-basis: 100%;
+      position: relative;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
 }
 
 @media (min-width: 576px) {
@@ -658,6 +664,12 @@ pre code {
     justify-content: space-around;
     font-size: small;
   }
+  .selfDesChild{
+    flex-basis: 100%;
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -696,6 +708,12 @@ pre code {
     align-content: flex-start; 
     justify-content: space-around;
   }
+  .selfDesChild{
+    flex-basis: 40%;
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -731,6 +749,12 @@ pre code {
     align-content: flex-start; 
     justify-content: space-around;
   }
+  .selfDesChild{
+    flex-basis: 40%;
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -765,6 +789,12 @@ pre code {
     align-items: flex-start; 
     align-content: flex-start; 
     justify-content: space-around;
+  }
+  .selfDesChild{
+    flex-basis: 40%;
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
 
